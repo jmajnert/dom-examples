@@ -78,6 +78,7 @@ document.addEventListener("pointerlockchange", lockChangeAlert, false);
 
 function lockChangeAlert() {
   if (document.pointerLockElement === canvas) {
+    console.log("XXX request pointer lock q");
     console.log("The pointer lock status is now locked");
     document.addEventListener("mousemove", updatePosition, false);
   } else {
