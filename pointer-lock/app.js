@@ -56,6 +56,7 @@ canvasDraw();
 
 canvas.addEventListener("click", async () => {
   if(!document.pointerLockElement) {
+    console.log("XXX request pointer lock");
     try {
       await canvas.requestPointerLock({
         unadjustedMovement: true,
